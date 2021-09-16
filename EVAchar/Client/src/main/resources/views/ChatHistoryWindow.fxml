@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="730.0" style="-fx-background-color: #141414; -fx-background-radius: 20; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChatHistoryController">
+   <children>
+      <ListView fx:id="chatlogList" layoutX="48.0" layoutY="14.0" prefHeight="441.0" prefWidth="635.0" style="-fx-background-radius: 8; -fx-border-color: #595959;">
+         <effect>
+            <DropShadow color="#9a2727" spread="0.09" />
+         </effect>
+      </ListView>
+      <JFXButton fx:id="closeBtn" layoutX="689.0" layoutY="14.0" onAction="#close" opacity="0.67" prefHeight="32.0" prefWidth="35.0" text="X" textFill="#b5a9a9" />
+   </children>
+   <effect>
+      <DropShadow height="35.83" radius="13.7075" spread="0.21" />
+   </effect>
+</AnchorPane>

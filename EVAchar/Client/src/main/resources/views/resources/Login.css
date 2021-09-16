@@ -1,0 +1,34 @@
+#CloseBtn {
+    -fx-graphic: url("cross.png");
+    -fx-background-color:transparent;
+    -fx-opacity: 1;
+}
+#CloseBtn:hover {
+    -fx-opacity: 0.5;
+}
+#CloseBtn:pressed {
+    -fx-opacity: 0.2;
+}
+#MinimizedBtn {
+    -fx-graphic: url("line.png");
+    -fx-background-color: transparent;
+    -fx-opacity: 1;
+}
+#MinimizedBtn:hover {
+    -fx-opacity: 0.5;
+}
+#backimg {
+    -fx-background-image: url("back.jpg");
+}
+#loginbtn {
+    -fx-graphic: url("btn.jpg");
+    -fx-background-color:transparent;
+    -fx-opacity: 1;
+}
+#loginbtn:hover {
+    -fx-opacity: 0.5;
+}
+#loginbtn:pressed {
+    -fx-opacity: 0.3;
+}
+

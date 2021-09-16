@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="73.0" prefWidth="213.0"  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="useravater" fitHeight="55.0" fitWidth="55.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Label fx:id="userNameLabel" layoutX="84.0" layoutY="10.0" prefHeight="30.0" prefWidth="74.0" text="用户名" textFill="#31313c">
+         <font>
+            <Font name="Microsoft YaHei" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="userIDLabel" layoutX="84.0" layoutY="40.0" text="ID:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

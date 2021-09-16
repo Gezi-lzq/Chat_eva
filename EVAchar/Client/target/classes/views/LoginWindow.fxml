@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.Cursor?>
+
+<BorderPane id="backimg" fx:id="borderPane" maxHeight="-Infinity" maxWidth="450.0" minHeight="-Infinity" minWidth="350.0" opacity="0.99" prefHeight="407.0" prefWidth="350.0" style="-fx-background-radius: 6;" stylesheets="@resources/Login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <center>
+        <GridPane prefHeight="366.0" prefWidth="350.0" style="-fx-background-radius: 6;" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="29.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="52.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="186.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="85.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="0.0" prefWidth="0.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="270.0" minHeight="0.0" prefHeight="197.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="301.0" minHeight="0.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="201.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="132.0" minHeight="9.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="142.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+
+                <Label fx:id="AccountNumber" text=" 账号" textFill="#9296b0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+
+                <Label fx:id="password" text=" 密码" textFill="#9392a8" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+
+                <PasswordField id="passtext" fx:id="passwordTextfield" opacity="0.51" prefHeight="39.0" prefWidth="209.0" stylesheets="@resources/Login.css" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+                <TextField id="useid" fx:id="accountTextfield" opacity="0.4" prefHeight="37.0" prefWidth="189.0" stylesheets="@resources/Login.css" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="13.0" />
+               </font></TextField>
+                <Button id="loginbtn" fx:id="loginButton" defaultButton="true" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="32.0" prefWidth="191.0" stylesheets="@resources/Login.css" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3">
+                    <children>
+                        <Button id="MinimizedBtn" fx:id="MinimizedBtn" graphicTextGap="0.0" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="30.0" prefWidth="43.0" stylesheets="@resources/Login.css">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button id="CloseBtn" fx:id="closeButton" graphicTextGap="0.0" mnemonicParsing="false" onAction="#closeSystem" prefHeight="30.0" prefWidth="40.0" stylesheets="@resources/Login.css">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor></Button>
+                    </children>
+                </HBox>
+                <StackPane prefHeight="99.0" prefWidth="186.0" GridPane.columnIndex="2">
+                    <children>
+                        <ImageView fitHeight="146.0" fitWidth="145.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@resources/EVAchat.jpg" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </StackPane>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="65.0" fitWidth="42.0" opacity="0.72" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@resources/EVAchatlog.jpg" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+            <JFXButton fx:id="registerButton" onAction="#registerButtonAction" prefHeight="23.0" prefWidth="176.0" ripplerFill="#ffe8f3" style="-fx-background-color: #4f4f44;" text="注    册" textFill="#bcc3be" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            </children>
+        </GridPane>
+    </center>
+   <effect>
+      <InnerShadow />
+   </effect>
+</BorderPane>
